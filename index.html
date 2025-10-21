@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <title>"☾ Hands Apart, Memories Close ☽"</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      font-family: "Cairo", sans-serif;
+      background: black; /* خلفية آمنة لو الفيديو صغير */
+    }
+
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: contain; /* ✅ أهم تغيير */
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+      margin-top: 40vh;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+      padding: 0 10px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8em; }
+      p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop playsinline>
+    <source src="Latter.mp4" type="video/mp4">
+    متصفحك لا يدعم عرض الفيديو.
+  </video>
+
+  <div class="content">
+    <h1>☾ Hands Apart, Memories Close ☽</h1>
+    <p>"A heart offered, a distance kept… yet the echo remains."...</p>
+  </div>
+
+</body>
+</html>
